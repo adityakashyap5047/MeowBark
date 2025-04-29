@@ -5,3 +5,4 @@ matplotlib
 tensorflow
 tensorflow-hub
 tf_keras
+gunicorn
