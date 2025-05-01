@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cat or Dog Classifier</title>
+  <title>MeowBark</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
   <div class="container">
-    <h1>🐾 Cat or Dog Classifier</h1>
+    <h1>🐱 MeowBark 🐶</h1>
     
     <form method="POST" enctype="multipart/form-data" class="form">
       <label class="file-label">
         📷 Choose an image:
-        <input type="file" name="image" class="file-input">
+        <input type="file" name="image" class="file-input" required accept="image/*">
       </label>
 
       <button type="submit" class="submit-btn">Predict</button>
@@ -23,7 +23,7 @@
     <form method="POST" class="form">
         <label class="file-label">
             🔗 Enter image URL:
-            <input type="text" name="image_url" class="file-input" placeholder="https://example.com/image.jpg">
+            <input type="text" name="image_url" class="file-input" placeholder="https://example.com/image.jpg" required>
         </label>
         <button type="submit" class="submit-btn">Predict</button>
     </form>
