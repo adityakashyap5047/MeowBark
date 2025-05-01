@@ -6,5 +6,5 @@ tensorflow
 tensorflow-hub
 tf_keras
 gunicorn
-imagekition
+imagekitio
 pillow
