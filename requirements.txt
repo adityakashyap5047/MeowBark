@@ -8,3 +8,4 @@ tf_keras
 gunicorn
 imagekitio
 pillow
+dotenv
