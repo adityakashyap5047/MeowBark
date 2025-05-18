@@ -30,8 +30,8 @@
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/pawdetect.git
-cd pawdetect
+git clone https://github.com/yourusername/MeowBark.git
+cd MeowBark
 
 # 2. Create and activate a virtual environment
 python -m venv venv
@@ -52,7 +52,6 @@ MeowBark/
 │
 ├── static/
 │   ├── style.css
-│   └── uploads/                  # Uploaded images saved here
 │
 ├── templates/
 │   └── index.html
