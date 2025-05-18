@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MeowBark - Real-Time AI Classifier</title>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">MeowBark</div>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/predict">Predict</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header id="intro">
+    <h1>Welcome to MeowBark 🐶🐱</h1>
+    <p>Real-Time Dog & Cat Image Classification powered by AI</p>
+    <p>Upload an image and let our model do the magic!</p>
+
+    <div class="button-container">
+        <a href="/predict" class="button">Predict Now</a>
+    </div>
+  </header>
+
+  <!-- Section 1 -->
+  <section class="section">
+    <div class="content-wrapper">
+      <div class="lottie-section">
+         <lottie-player 
+                src="https://assets5.lottiefiles.com/packages/lf20_zrqthn6o.json" 
+                background="transparent" 
+                speed="1" 
+                style="width: 100%; height: 300px;" 
+                loop autoplay>
+            </lottie-player>
+      </div>
+      <div class="text-section">
+        <h2>Real-Time Prediction</h2>
+        <p>Simply upload your image and watch MeowBark instantly identify whether it's a dog or a cat. Our powerful MobileNetV2 model handles inference in milliseconds!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="section" id="features">
+    <div class="content-wrapper">
+      <div class="text-section">
+        <h2>Why MeowBark?</h2>
+        <div class="card-container">
+          <div class="card">
+            <h3>Blazing Fast</h3>
+            <p>Instant results powered by MobileNetV2 and TensorFlow Lite.</p>
+             <lottie-player 
+          src="https://assets1.lottiefiles.com/packages/lf20_Cc8Bpg.json" 
+          background="transparent" speed="1" 
+          style="width: 300px; height: 300px;" 
+          loop autoplay>
+        </lottie-player>
+          </div>
+          <div class="card">
+            <h3>Simple UI</h3>
+            <p>User-friendly interface focused on accessibility and ease.</p>
+            <lottie-player 
+            src="https://assets7.lottiefiles.com/packages/lf20_kyu7xb1v.json"  
+            background="transparent" 
+            speed="1" 
+            style="width: 100%; height: 200px;" 
+            loop autoplay>
+          </lottie-player>
+          </div>
+          <div class="card">
+            <h3>Accurate</h3>
+            <p>Trained on thousands of images to ensure top accuracy.</p>
+            <lottie-player 
+                src="https://assets5.lottiefiles.com/packages/lf20_zrqthn6o.json" 
+                background="transparent" 
+                speed="1" 
+                style="width: 100%; height: 300px;" 
+                loop autoplay>
+            </lottie-player>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
