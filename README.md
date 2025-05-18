@@ -1,15 +1,17 @@
 # 🐾 MeowBark – Cat vs Dog Image Classifier
 
-**PawDetect** is a Flask-based web application that allows users to upload an image of a pet and instantly identify whether it’s a **cat** or a **dog** using a trained deep learning model built with TensorFlow and TensorFlow Hub.
+**MeowBark** is a Flask-based web application that allows users to upload an image of a pet and instantly identify whether it’s a **cat** or a **dog** using a trained deep learning model built with TensorFlow and TensorFlow Hub.
 
 ---
+
+![Banner](screenshots/home.png)
+![Banner](screenshots/predict.png)
 
 ## 🚀 Features
 
 - 🖼️ Upload image via drag-and-drop or file input
 - 🧠 Predict whether the image is of a cat or a dog using a trained model
 - 🌙 Dark-themed UI with a sleek and simple design
-- 📸 Preview of the uploaded image before prediction
 - ⚙️ Built using Flask and TensorFlow
 
 ---
@@ -45,23 +47,37 @@ source venv/bin/activate
 # 3. Install the required dependencies
 pip install -r requirements.txt
 
-# 4. Run the application
-flask run
+# 4. Add the environment variable which is listed in .env.example
+
+# 5. Run the application
+python app.py
 
 MeowBark/
 │
+├── data/
+│    ├── Dog Cat Image Resize
+│    ├── kagglecatsanddogs_3367a
+│
+├── model/
+│    ├── cat_dog_model.h5
+│
+├── notebook/
+│    ├── MeowBark.ipynb
 ├── static/
+│    ├── home.css
 │   ├── style.css
 │
 ├── templates/
+│    ├── home.html
 │   └── index.html
 │
-├── model/
-│   └── cat_dog_model.h5         # Trained model file
-│
-├── app.py                       # Flask application
+├── .env
+├── .gitignore
+├── app.py      
+├── .Procfile
+├── README.md
 ├── requirements.txt
-└── README.md
+├── runtime.tx
 
 ```
 🧠 Model Details
